@@ -1,6 +1,6 @@
 permissions:
-  contents: none
-  pull-requests: none
+  contents: read
+  pull-requests: read
 
 name: find-changes
 on:
