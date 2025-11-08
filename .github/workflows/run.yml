@@ -9,7 +9,7 @@ on:
       - "**"
       - "!**.md"
   push:
-    branches: main
+    branches: v1
     paths:
       - "**"
       - "!**.md"
@@ -23,7 +23,7 @@ jobs:
 
       - name: Find changes
         id: changes
-        uses: anttiharju/find-changes-action@main
+        uses: anttiharju/find-changes-action@v1
 
       - name: Echo changed files
         shell: sh
