@@ -6,8 +6,8 @@ This action outputs list of changed files as JSON. It works in `pull_request`, `
 
 If you use this, you should have either [merge queues](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue) (GitHub Enterprise feature) or `Require branches to be up to date before merging` branch protection rule enabled.
 
-Combine this action with its sibling [compare-changes](https://github.com/anttiharju/compare-changes) to run the CI steps or jobs that follow it conditionally.
+Combine this action with its sibling [compare-changes](https://github.com/anttiharju/actions/blob/86c4fe558a4ed67320c3e0f8877e33220e59fbd9/compare-changes) to run the CI steps or jobs that follow it conditionally.
 
 ## Usage example
 
-See [here](./.github/workflows/run.yml).
+Under [.github/workflows](./.github/workflows/run.yml).
