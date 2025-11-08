@@ -1,0 +1,32 @@
+permissions:
+  contents: none
+  pull-requests: none
+
+name: find-changes
+on:
+  pull_request:
+    paths:
+      - "**"
+      - "!**.md"
+  push:
+    branches: main
+    paths:
+      - "**"
+      - "!**.md"
+jobs:
+  example:
+    name: Example
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Find changes
+        id: changes
+        uses: anttiharju/find-changes-action@main
+
+      - name: Echo changed files
+        shell: sh
+        run: |
+          echo ${{ steps.changes.outputs.array }}
+        # format: ["foo/bar", "baz"]
