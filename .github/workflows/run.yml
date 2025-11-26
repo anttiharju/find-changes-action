@@ -9,7 +9,7 @@ on:
       - "**"
       - "!**.md"
   push:
-    branches: v1
+    branches: [v1]
     paths:
       - "**"
       - "!**.md"
